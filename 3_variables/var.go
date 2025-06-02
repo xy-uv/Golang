@@ -17,6 +17,12 @@ func main() {
 	var age =33/2
 	fmt.Println(age)
 
+	// Variable grouping
+	var (
+		nameHer="Senaha"
+		name_her="Sanha"
+	)
+	fmt.Println(nameHer,name_her)
 	// Shorthand variables define with assign
 	nan:=37./2
 	fmt.Println(nan)
