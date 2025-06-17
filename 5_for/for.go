@@ -8,18 +8,18 @@ func main(){
 // while fashion type loop
 	i:=1
 	for (i<=7){
-		// fmt.Println(i)
+		fmt.Println(i)
 		i+=2
 	}
 
 // infinite loop
 	// for{
-	// 	fmt.Println("inf")
+		fmt.Println("inf")
 	// }
 
 // classic for loop
 	for j:=0;j<=9;j++{
-		// fmt.Println(j)
+		fmt.Println(j)
 	}
 
 // continue/break with loop
@@ -28,7 +28,7 @@ func main(){
 			// continue
 			break
 		}
-		// fmt.Println(k)
+		fmt.Println(k)
 	}
 
 // go 1.22 updated for loop with range
