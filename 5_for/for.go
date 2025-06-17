@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// for-> for is the only one constructor for lopping in go
+// for-> for is the only one constructor for looping in go
 
 func main(){
 // while fashion type loop
@@ -33,6 +33,8 @@ func main(){
 
 // go 1.22 updated for loop with range
 	for m:=range 100{
+		if(m%2==0){
+			continue}
 		fmt.Println(m)
 	}
 }
