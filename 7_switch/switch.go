@@ -1,6 +1,9 @@
 package main
 
-import "time"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	// switch is a control structure that allows you to execute different code blocks based on the value of an expression.
@@ -52,4 +55,20 @@ func main() {
 			println("It's almost the weekend/Praying day!")
 	}
 		
+	// type switch
+	whatType:=func(i any){
+		switch i.(type){
+		case int:
+			fmt.Println("It's an integer")
+		case string:
+			fmt.Println("It's a string")
+		case bool:
+			fmt.Println("It's a boolean")
+		case float32,float64:
+			fmt.Println("It's a float")
+		default:
+			fmt.Println("Other")
+	}
+}
+whatType("sanda")
 }
