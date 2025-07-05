@@ -51,6 +51,14 @@ func main() {
 	fmt.Println("Length of mixedColors array:", len(mixedColors))
 	fmt.Println("Length of nums array:", len(nums))
 
+
+	// 2D arrays
+	matrix := [2][2]int{
+		{1, 3},
+		{5, 1},
+	}
+	fmt.Println("2D Array (Matrix):", matrix)
+
 	// Array use case in go
 	// // 1. Fixed size: Arrays have a fixed size, which means you need to know the number of elements in advance.
 	// // 2. Homogeneous: All elements in an array must be of the same type.
