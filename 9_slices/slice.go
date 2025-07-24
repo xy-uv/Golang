@@ -1,5 +1,10 @@
 package main
 
+import (
+	"fmt"
+	"slices"
+)
+
 // slice -> a dynamically-sized, flexible view into the elements of an array.
 // most used data structure/construct in Go.
 // slices are more powerful than arrays, as they can grow and shrink in size.
@@ -10,5 +15,48 @@ package main
 
 
 func main() {
-	
+	// uninitialized slice is nil
+	var ns []int
+	fmt.Println(ns == nil)
+	fmt.Println(len(ns))
+
+	var nk = make([]int, 0, 5)
+	// capacity -> maximum numbers of elements can fit
+	fmt.Println(cap(nk))
+	fmt.Println(nk == nil)
+
+	nj := []int{}
+
+	nj = append(nj, 1)
+	nj = append(nj, 2)
+
+	nj[0] = 3
+	nj[1] = 5
+	fmt.Println(nj)
+	fmt.Println(cap(nj))
+	fmt.Println(len(nj))
+
+	var nas = make([]int, 0, 5)
+	nas = append(nas, 2)
+	var nas2 = make([]int, len(nas))
+
+	// copy function
+	copy(nas2, nas)
+	fmt.Println(nas, nas2)
+
+	// slice operator
+
+	var nm = []int{1, 2, 3, 4, 5}
+	fmt.Println(nm[0:1])
+	fmt.Println(nm[:2])
+	fmt.Println(nm[1:])
+
+	// slices
+	var nu1 = []int{1, 2, 3}
+	var nu2 = []int{1, 2, 4}
+
+	fmt.Println(slices.Equal(nu1, nu2))
+
+	var nubs = [][]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(nubs)
 }
