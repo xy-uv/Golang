@@ -66,4 +66,9 @@ func main() {
 		sum+=numbers[i]
 	}
 	fmt.Println(sum)
+
+	names:=make([]string,0)
+
+	names= append(names, "Doya","Samir","Ayat","Alif","Azan","Sitara")
+	fmt.Println(names)
 }

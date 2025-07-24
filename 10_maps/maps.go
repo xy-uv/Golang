@@ -43,4 +43,12 @@ func main() {
 	ms2 := map[string]int{"price": 40, "phones": 3}
 	fmt.Println(maps.Equal(ms1, ms2))
 
+	mau:=make(map[string]string)
+
+	mau["name"]="SHAHRIAR AHMED"
+	mau["age"]="21"
+	mau["role"]="Bekar"
+	mau["luck"]="bad"
+	fmt.Println(mau)
+
 }
