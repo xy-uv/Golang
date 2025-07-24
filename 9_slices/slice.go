@@ -59,4 +59,11 @@ func main() {
 
 	var nubs = [][]int{{1, 2, 3}, {4, 5, 6}}
 	fmt.Println(nubs)
+
+	numbers:=[]int{1,4,6,7,9,3,5}
+	sum:=0
+	for i :=range numbers{
+		sum+=numbers[i]
+	}
+	fmt.Println(sum)
 }
